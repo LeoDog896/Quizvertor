@@ -2,7 +2,14 @@
     "manifest_version": 3,
     "name": "Sample Web Extension",
     "version": "0.0.1",
-    "browser_action": {
+    "action": {
         "default_popup": "index.html"
-    }
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["content.js"]
+        }
+      ],
+    "permissions": ["activeTab"]
   }
