@@ -5,6 +5,10 @@
   },
   "devDependencies": {
     "@parcel/config-webextension": "^2.8.0",
+    "buffer": "^5.5.0",
     "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "docx": "^7.7.0"
   }
 }
